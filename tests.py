@@ -18,6 +18,12 @@ class TestCaseA(unittest.TestCase):
     def test_getarea(self,radius):
         self.assertEqual(radius=13, 530, "true")
 
+class TestCaseB(unittest.TestCase):
+
+    def test_firstlastlist(self,List):
+        apple=[4, 2, 9, 1]
+        self.assertTrue(apple,first=4)
+        self.assertTrue(apple,last=1)
 
 
 
