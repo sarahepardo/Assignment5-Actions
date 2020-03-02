@@ -1,4 +1,5 @@
 import math
+from datetime import date
 
 
 def firstrun():
@@ -13,4 +14,11 @@ def firstlastlist(List):
     first=List[0]
     last=List[size-1]
     return first & last
+
+def differencedays(fyr,fmon,fday,lyr,lmon,lday):
+    firstdate=date(fyr,fmon,fday)
+    lastdate=date(lyr,lmon,lday)
+    diff=lastdate-firstdate
+    return diff
+
 
